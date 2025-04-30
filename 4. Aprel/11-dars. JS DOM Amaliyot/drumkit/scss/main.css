@@ -1,0 +1,52 @@
+/* Barcha elementlarga umumiy stil qo'llanadi */
+* {
+  margin: 0; /* Har bir elementning tashqi bo'shliq (margin) 0 ga tenglashtiriladi */
+  padding: 0; /* Har bir elementning ichki bo'shliq (padding) 0 ga tenglashtiriladi */
+  box-sizing: border-box; /* Elementlarning o'lchamlari hisoblanishda, padding va borderni kiritadi */
+}
+
+/* Body uchun umumiy stil */
+body {
+  background-image: url(../img/bg.jpg); /* Saytning foniga rasm qo'yiladi */
+  font-size: 10px; /* Butun sahifadagi matnning o'lchami 10px bo'ladi */
+  background-size: cover; /* Fon rasmi ekran hajmiga to'liq moslashtiriladi */
+  font-family: "jetbrains mono"; /* Matnni "JetBrains Mono" shriftida ko'rsatadi */
+  /* .container sinfi uchun stil */
+}
+body .container {
+  display: flex; /* Flexbox yordamida elementlarni joylashtirish */
+  min-height: 100vh; /* Containerning minimal balandligi ekranning 100% ga teng bo'ladi */
+  align-items: center; /* Vertikal tarzda markazlashtirish */
+  justify-content: center; /* Gorizontal tarzda markazlashtirish */
+  background-color: rgba(255, 255, 255, 0.2); /* Container fonini yarim shaffof oq rangga belgilaydi */
+  gap: 10px; /* Flexbox elementlari orasidagi bo'shliqni 10px qilib belgilaydi */
+  /* .key sinfi uchun stil */
+}
+body .container .key {
+  border: 4px solid black; /* Klavishlar atrofida qora 4px chegara qo'yiladi */
+  border-radius: 10px; /* Klavishlarning burchaklari yumshatiladi (radiusi 10px) */
+  padding: 24px 12px; /* Klavishlar ichidagi bo'shliqni 24px yuqoridan va pastdan, 12px chap va o'ngdan beriladi */
+  width: 150px; /* Klavishlar kengligi 150px qilib belgilaydi */
+  text-align: center; /* Klavishlar ichidagi matnni markazlashtiradi */
+  color: white; /* Matn rangini oq qilib belgilaydi */
+  text-shadow: 0 0 0.5rem rgb(0, 0, 0); /* Matnni qora soya bilan ajratadi */
+  background-color: rgba(0, 0, 0, 0.4); /* Klavishlarning fonini yarim shaffof qora rangga belgilaydi */
+  /* h1 tagi uchun stil */
+  /* span tagi uchun stil */
+  /* Klavish bosilgan va aktiv holatda bo'lganda qo'llaniladigan stil */
+}
+body .container .key h1 {
+  font-size: 70px; /* h1 matn o'lchamini 70px qilib belgilaydi */
+}
+body .container .key span {
+  display: block; /* span elementini blok holatiga o'zgartiradi, ya'ni yangi qatorda ko'rsatiladi */
+  font-size: 1.2rem; /* Ikkilamchi matnning o'lchami 1.2rem bo'ladi (rem - root elementga nisbatan o'lcham) */
+  text-transform: uppercase; /* Matnni katta harflarda ko'rsatadi */
+  letter-spacing: 1px; /* Harflar orasidagi masofani 1px qilib belgilaydi */
+  font-weight: 700; /* Matnni qalin qiladi (700 qalinlikning yuqori darajasi) */
+  color: #ffc600; /* Matnni sariq rangga (hex #ffc600) o'zgartiradi */
+}
+body .container .key.active {
+  border-color: #ffc600; /* Aktiv holatda klavishning chegara rangi sariq bo'ladi */
+  box-shadow: 0 0 10px #ffc600; /* Aktiv holatda klavish atrofida sariq rangda 10px kenglikdagi soya bo'ladi */
+}/*# sourceMappingURL=main.css.map */
