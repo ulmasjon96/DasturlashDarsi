@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/basket.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a href="./" class="logo"> World Peas </a>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="./products.html">Shop</a>
+            </li>
+            <li class="header__list-item"><a href="#!">Newstand</a></li>
+            <li class="header__list-item"><a href="#!">Who we are</a></li>
+            <li class="header__list-item"><a href="#!">My profile</a></li>
+          </ul>
+
+          <a href="#!" class="link">Basket (3)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper main__wrapper">
+        <section class="main__heading">
+          <h1 class="main__title">Basket</h1>
+          <span class="items-count">3 items</span>
+        </section>
+
+        <section class="products-basket">
+          <ul class="basket-list">
+            <li class="card basket-list-item">
+              <img
+                src="./img/tomato.png"
+                alt="tomato"
+                class="basket-list__img"
+              />
+
+              <div class="basket-list__content">
+                <p class="list-item__name">Heirloom tomato</p>
+                <span class="list-item__selling-price">$5.99 / lb</span>
+                <input class="list-item__input" type="text" value="1 lb" />
+
+                <span class="list-item__price">$5.99</span>
+              </div>
+            </li>
+            <li class="card basket-list-item">
+              <img
+                src="./img/ginger.png"
+                alt="ginger"
+                class="basket-list__img"
+              />
+
+              <div class="basket-list__content">
+                <p class="list-item__name">Organic ginger</p>
+                <span class="list-item__selling-price">$12.99 / lb</span>
+                <input class="list-item__input" type="text" value="0.5 lb" />
+
+                <span class="list-item__price">$6.50</span>
+              </div>
+            </li>
+            <li class="card basket-list-item">
+              <img src="./img/onion.png" alt="onion" class="basket-list__img" />
+
+              <div class="basket-list__content">
+                <p class="list-item__name">Sweet onion</p>
+                <span class="list-item__selling-price">$2.99 / lb</span>
+                <input class="list-item__input" type="text" value="5 lb" />
+
+                <span class="list-item__price">$14.95</span>
+              </div>
+            </li>
+          </ul>
+          <div class="basket-total card">
+            <h3 class="basket-total__title">Order summary</h3>
+
+            <ul class="basket-total__details-list">
+              <li class="details-item">
+                <span class="details-item__label">Subtotal</span>
+                <span class="details-item__price">$27.44</span>
+              </li>
+              <li class="details-item">
+                <span class="details-item__label">Shipping</span>
+                <span class="details-item__price">$3.99</span>
+              </li>
+              <li class="details-item">
+                <span class="details-item__label">Tax</span>
+                <span class="details-item__price">$2.00</span>
+              </li>
+              <li class="details-item">
+                <span class="details-item__label">Total</span>
+                <span class="details-item__price">$33.43</span>
+              </li>
+            </ul>
+
+            <a href="#!" class="link link-full">Continue to payment</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

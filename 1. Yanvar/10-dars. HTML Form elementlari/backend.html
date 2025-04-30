@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Backend sahifasi</h2>
+    </header>
+    <div id="details"></div>
+    <h3>
+      <a href="index.html">asosiy sahifaga qaytish</a>
+    </h3>
+    <script>
+      const resultList = document.getElementById("details");
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultList.append(`${name}: ${value}`);
+        resultList.append(document.createElement("br"));
+      });
+    </script>
+  </body>
+</html>

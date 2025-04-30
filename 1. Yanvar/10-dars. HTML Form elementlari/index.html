@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Form elementlari</h1>
+    </header>
+    <form action="backend.html" method="GET">
+      <div>
+        <input type="text" id="ism" name="ism" placeholder="Ism..." />
+      </div>
+      <div>
+        <input
+          type="password"
+          id="parol"
+          name="parol"
+          minlength="8"
+          maxlength="20"
+          placeholder="Parol..."
+        />
+      </div>
+
+      <div>
+        <input type="email" name="email" id="email" placeholder="Email..." />
+      </div>
+
+      <div>
+        <label for="age">Yosh:</label>
+        <input type="number" id="age" name="yosh" min="1" max="200" />
+      </div>
+
+      <div>
+        <p>Sevimli taomingiz:</p>
+
+        <input type="checkbox" id="manti" name="sevimli taom" value="manti" />
+        <label for="manti">Manti</label>
+
+        <input type="checkbox" id="palov" name="sevimli taom" value="palov" />
+        <label for="palov">Palov</label>
+      </div>
+
+      <div>
+        <p>Jins:</p>
+        <input type="radio" id="erkak" name="jins" value="erkak" />
+        <label for="erkak">Erkak</label>
+
+        <input type="radio" id="ayol" name="jins" value="ayol" checked />
+        <label for="ayol">Ayol</label>
+      </div>
+
+      <button type="button">click</button>
+      <button type="reset">O'chirish</button>
+      <button type="submit">Kirish</button>
+    </form>
+
+    <script>
+      const btn = document.querySelector("button[type='button']");
+      btn.addEventListener("click", () => {
+        document.body.style.background = "gold";
+      });
+    </script>
+  </body>
+</html>

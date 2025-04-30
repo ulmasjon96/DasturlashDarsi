@@ -1,0 +1,15 @@
+li {
+  color: red;
+  border-bottom: 1px solid black;
+}
+
+a {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: hotpink;
+}
+
+h1 {
+  border: 2px dotted darkblue;
+}

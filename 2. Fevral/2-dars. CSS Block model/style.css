@@ -1,0 +1,8 @@
+div {
+  border: 1px solid blue;
+  /* padding: 20px; */
+  width: 100px;
+  margin-left: 100px;
+
+  padding: 15px;
+}

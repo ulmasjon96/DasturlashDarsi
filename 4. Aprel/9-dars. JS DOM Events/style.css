@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  color: royalblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  max-width: 1024px;
+  width: calc(100% - 60px);
+  margin: 20px auto;
+  border: 1px solid red;
+}
+
+.btn-red {
+  color: red;
+  border-color: red;
+}
+
+.dark-mode {
+  color: white;
+  background-color: black;
+}

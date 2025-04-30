@@ -1,0 +1,60 @@
+body {
+  background-image: url(../img/birds.jpg);
+  background-size: cover;
+}
+div {
+  width: 140px;
+  height: 140px;
+
+  background-color: chocolate;
+}
+
+.quti {
+  background-color: darkcyan;
+
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 255);
+  background-color: rgb(255, 0, 255);
+  background-color: rgb(255, 255, 0);
+  background-color: rgb(0, 255, 255);
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(100, 100, 100);
+  background-color: rgb(220, 20, 100);
+  background-color: rgb(20, 120, 190);
+  background-color: rgb(220, 120, 190);
+  background-color: rgba(35, 78, 143, 0.3);
+  color: rgb(50, 50, 130);
+  border: 10px solid rgb(120, 200, 220, 0.4);
+
+  background-color: #0055aa;
+  background-color: #000011;
+  background-color: #000022;
+  background-color: #000033;
+  background-color: #000044;
+  background-color: #000055;
+  background-color: #000066;
+  background-color: #000077;
+  background-color: #000088;
+  background-color: #000099;
+  background-color: #0000aa;
+  background-color: #0000bb;
+  background-color: #0000cc;
+  background-color: #0000ee;
+  background-color: #0000ff;
+
+  background-color: #0333aa;
+  background-color: #fa35c6;
+  background-color: #dc28289a;
+}
+
+.title {
+  color: rgb(0, 0, 0, 0.8);
+  font-size: 60px;
+}
+
+.box {
+  background-color: rgb(78, 90, 130);
+  border-radius: 50%;
+}

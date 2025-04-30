@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-color: #bbb;
+  color: #222;
+}
+
+a {
+  color: #bbb;
+}
+
+.wrapper {
+  max-width: 1024px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #822;
+  color: #bbb;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.post__title {
+  margin: 15px 0;
+}
+
+.tana {
+  background-color: yellow;
+}
+
+#abc {
+  padding: 5px 30px;
+  margin-bottom: 15px;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  background-color: beige;
+}
+
+.cars__wrapper {
+  padding: 30px;
+  padding-left: 100px;
+}

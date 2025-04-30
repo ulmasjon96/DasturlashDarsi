@@ -1,0 +1,17 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+
+  -webkit-box-shadow: 56px 60px 62px 38px rgba(219, 24, 131, 1);
+  -moz-box-shadow: 56px 60px 62px 38px rgba(219, 24, 131, 1);
+  box-shadow: 56px 60px 62px 38px rgba(219, 24, 131, 1);
+
+  box-shadow: 30px -25px 101px 49px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 30px -25px 101px 49px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 30px -25px 101px 49px rgba(0, 0, 0, 0.61);
+}

@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-image: url(https://assets.bonappetit.com/photos/5c366551f212512d0e6cefd0/16:9/w_1280,c_limit/Basically-Coffee-0219-03.jpg);
+}
+
+div {
+  background-color: burlywood;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: Clinton, Calibri, Impact, serif;
+}
+.established {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+}
+h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+h1:active {
+  background-color: red;
+}
+h2 {
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
+
+hr {
+  height: 3px;
+  background-color: brown;
+  border-color: brown;
+  border-radius: 3px;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+li {
+  margin-bottom: 10px;
+  span {
+    display: inline-block;
+  }
+}
+
+li:hover {
+  font-family: Garamond;
+}
+.coffee-name {
+  font-style: italic;
+  width: 49%;
+}
+.coffee-price {
+  font-family: monospace;
+  width: 49%;
+  text-align: right;
+}
