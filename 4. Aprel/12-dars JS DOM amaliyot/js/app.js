@@ -1,4 +1,4 @@
-const quotes = [
+const quotelar = [
 	{
 		quote: 'The greatest glory in living lies not in never falling, but in rising every time we fall.',
 		author: 'Nelson Mandela',
@@ -291,11 +291,11 @@ yangiQuoteBtn.addEventListener('click', yangiQuotechiqar);
 // Bu funksiya har safar tugma bosilganda yangi tasodifiy sitatani chiqaradi
 function yangiQuotechiqar() {
 	// 0 dan quotes.length - 1 gacha bo‘lgan tasodifiy indeks yaratamiz
-	const random = Math.floor(Math.random() * quotes.length);
+	const random = Math.floor(Math.random() * quotelar.length);
 
 	// Tanlangan indeksdagi sitataning matnini sahifadagi ".quote-text" elementiga yozamiz
-	document.querySelector('.quote-text').textContent = quotes[random].quote;
+	document.querySelector('.quote-text').textContent = quotelar[random].quote;
 
 	// Tanlangan indeksdagi muallif ismini sahifadagi ".quote-author" elementiga yozamiz
-	document.querySelector('.quote-author').textContent = quotes[random].author;
+	document.querySelector('.quote-author').textContent = quotelar[random].author;
 }

@@ -29,6 +29,13 @@ body {
 		// text-align: center;
 		color: #fff;
 		width: 700px;
+		min-height: 350px;
+		display: flex;
+		flex-direction: column;
+		.quote-svg{
+			width: 24px;
+			height: 24px;
+		}
 		.quote-text {
 			margin: 10px;
 			font-size: 1rem;
@@ -51,10 +58,12 @@ body {
 			cursor: pointer;
 			font-size: 20px;
 			display: block;
-			margin: 20px auto 0;
-			transition: all 0.3s ease-in-out;
+			margin: auto;
+			margin-bottom: 0;
 			border: 2px solid #fff;
 			box-shadow: 0 0 10px #fff;
+			position: relative;
+
 			&:hover {
 				// background-color: rgba(0, 255, 255, 0.4);
 				color: black;
@@ -63,7 +72,7 @@ body {
 				box-shadow: 0 0 10px #000000;
 			}
 			&:active {
-				scale: 0.9;
+				scale: 0.98;
 			}
 		}
 	}
