@@ -1,1 +1,68 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+  font-size: 10px;
+  background-size: cover;
+  font-family: "JetBrains Mono";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 200px;
+  min-height: 100vh;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.container .quote {
+  border: 2px solid #fff;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 220, 0.4);
+  margin: 0 auto;
+  color: #fff;
+  width: 700px;
+}
+.container .quote .quote-text {
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-indent: 20px;
+}
+.container .quote .quote-author {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.container .quote .btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  margin: 20px auto 0;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #fff;
+}
+.container .quote .btn:hover {
+  background-color: rgba(0, 255, 255, 0.4);
+  color: black;
+  border: 2px solid #000000;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+  box-shadow: 0 0 10px #000000;
+}
+.container .quote .btn:active {
+  scale: 0.9;
+}/*# sourceMappingURL=main.css.map */
