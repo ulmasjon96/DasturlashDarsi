@@ -57,10 +57,8 @@ body {
   box-shadow: 0 0 10px #fff;
 }
 .container .quote .btn:hover {
-  background-color: rgba(0, 255, 255, 0.4);
   color: black;
   border: 2px solid #000000;
-  text-shadow: 0 0 2px rgb(0, 0, 0);
   box-shadow: 0 0 10px #000000;
 }
 .container .quote .btn:active {
