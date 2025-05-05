@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: 'JetBrains Mono', monospace;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+// a:link {
+// 	// text-decoration: none;
+// 	color: #fff;
+// }
+
+// a:visited {
+// 	// text-decoration: none;
+// 	color: green;
+// }
+
+.title {
+  color: rgb(255, 255, 255);
+}
+
+.title:target{
+  color: pink;
+}
+
+.title:target::before {
+  content: '';
+  font-size: 10px;
+  color: yellow;
+}

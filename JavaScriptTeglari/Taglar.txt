@@ -1,0 +1,8 @@
+trim() = matn boshi va oxiridan bo'sh joylarni olib tashlaydi.
+
+getElementById() = o'zgaruvchilarni ID sini olib beradi.
+
+innerHTML = 'Hello JavaScript' = html ichidagi har bir kodni tarkibini o'zgartiradi matn va kodlarini.
+
+forEach() = bu JavaScript array metodidir, u malum bir funktsiyani har bir element uchun takrorlaydi. Agar siz biror ma'lumotlar ruyxatiga (array) ega bulsangiz, forEach orqali har bir elementga ishlov berish mumkin.
+
