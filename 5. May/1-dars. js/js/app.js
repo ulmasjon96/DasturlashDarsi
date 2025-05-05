@@ -126,6 +126,7 @@ const deleteBtn = document.getElementById('delete');
 const equalBtn = document.getElementById('equal');
 const topDisplay = document.querySelector('.top-display');
 const bottomDisplay = document.querySelector('.bottom-display');
+const percentBtn = document.getElementById('percent');
 // const screen = document.querySelector('.screen');
 // const historyDiv = document.querySelector('.history');
 // const themeToggle = document.getElementById('theme-toggle');
@@ -134,18 +135,31 @@ let YANGISON = '';
 let ESKISON = '';
 let OPERATSIYA = '';
 let NATIJA = '';
+let PROTSENT;
 
 numberBtns.forEach(btn => {
 	btn.addEventListener('click', addNumber);
 });
 
+deleteBtn.addEventListener('click', deleteNumber);
+allClearBtn.addEventListener('click', allClear);
+operationBtns.forEach(btn => {
+	btn.addEventListener('click', addOperation);
+});
+
+// percentBtn.addEventListener('click', () => {
+// 	YANGISON = Number() / 100;
+// 	updateScreen();
+// });
+equalBtn.addEventListener('click', () => {
+	if (YANGISON !== '' && ESKISON !== '') calculate();
+});
+
 function addNumber(hodisa) {
-	// console.log(hodisa.target.textContent);
 	let number = hodisa.target.textContent;
 
-	if (YANGISON.includes('.') && number === '.') return;
+	if (YANGISON.includes('.') && number == '.') return;
 	if (YANGISON == '' && number == '.') return;
-
 	if (YANGISON == '0' && number != '.') {
 		YANGISON = number;
 	} else {
@@ -155,6 +169,57 @@ function addNumber(hodisa) {
 	updateScreen();
 }
 
+function addOperation(hodisa) {
+	if (YANGISON === '') return;
+	if (ESKISON !== '') calculate();
+
+	OPERATSIYA = hodisa.target.textContent;
+
+	ESKISON = YANGISON;
+	YANGISON = '';
+	updateScreen();
+}
+
+function calculate() {
+	ESKISON = Number(ESKISON);
+	YANGISON = Number(YANGISON);
+	switch (OPERATSIYA) {
+		case '+':
+			NATIJA = ESKISON + YANGISON;
+			break;
+		case '-':
+			NATIJA = ESKISON - YANGISON;
+			break;
+		case '*':
+			NATIJA = ESKISON * YANGISON;
+			break;
+		case '/':
+			NATIJA = ESKISON / YANGISON;
+			break;
+		default:
+			console.log('Error');
+			break;
+	}
+	YANGISON = NATIJA;
+	ESKISON = '';
+	OPERATSIYA = '';
+
+	updateScreen();
+}
+
+function deleteNumber() {
+	YANGISON = YANGISON.slice(0, -1);
+	updateScreen();
+}
+
+function allClear() {
+	YANGISON = '';
+	ESKISON = '';
+	OPERATSIYA = '';
+	updateScreen();
+}
+
 function updateScreen() {
 	bottomDisplay.textContent = YANGISON;
+	topDisplay.textContent = ESKISON + ' ' + OPERATSIYA;
 }

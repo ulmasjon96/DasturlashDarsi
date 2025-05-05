@@ -123,5 +123,5 @@
 // console.log(countWords('   ')); // 0
 // console.log(countWords('')); // 0
 
-let number = 42;
-document.write('The answer is ' + number);
+// let number = 42;
+// document.write('The answer is ' + number);
