@@ -10,3 +10,4 @@ textContent = `bu html ichidagi har bir kodni tarkibini o'zgartiradi matn va kod
 
 
 switch() = `bu JavaScript if-else ga oid. Agar biror bir o'zgaruvchi qiymatini tekshirish kerak bo'lsangiz, switch() funktsiyasidan foydalanishingiz mumkin.`
+
