@@ -11,3 +11,7 @@ textContent = `bu html ichidagi har bir kodni tarkibini o'zgartiradi matn va kod
 
 switch() = `bu JavaScript if-else ga oid. Agar biror bir o'zgaruvchi qiymatini tekshirish kerak bo'lsangiz, switch() funktsiyasidan foydalanishingiz mumkin.`
 
+
+setTimeout = `bu JavaScript dasturlash tilidagi funksiya bo‘lib, u berilgan vaqtdan (millisekundlarda) keyin biror funksiyani bajarishga imkon beradi. Ya’ni, bu vaqtinchalik kechikish bilan amal bajarishni tashkil qiladi.`
+
+

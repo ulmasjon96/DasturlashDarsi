@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./scss/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>O'quvchilar ro'yxati</h1>
+			<button id="openModal">+ O'quvchilar qo'shish</button>
+
+			<!-- Modal div -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span id="closeModal" class="close">&times;</span>
+					<h2>Bu div oynasi!</h2>
+					<p>Bu yerga istalgan ma'lumot qo'shishingiz mumkin.</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal">
+			<table>
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Ismi Familiyasi</th>
+						<th>Yoshi</th>
+						<th>Sinf</th>
+					</tr>
+				</thead>
+				<tbody id="studentTableBody">
+					<!-- JavaScript orqali to‘ldiriladi -->
+				</tbody>
+			</table>
+		</div>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
