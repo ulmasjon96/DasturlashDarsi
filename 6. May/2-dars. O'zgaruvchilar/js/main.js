@@ -67,5 +67,4 @@
 // console.log(value) // const o'zgaruvchi e'lon qilishidan oldin foydalanishga imkoniyat bermaydi
 // const value = "hello"
 
-
-const 
+// const API_KEY = "123ndas123123";
