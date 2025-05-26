@@ -1,0 +1,14 @@
+delete arr[1]
+slice
+concat
+include 
+indexof(qiymat)
+lastindexof
+reverse
+split
+join
+str
+result
+reduce
+
+
